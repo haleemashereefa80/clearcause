@@ -1,0 +1,43 @@
+# Node dependencies
+node_modules/
+dist/
+build/
+.npm/
+npm-debug.log*
+
+# Python environment
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.ipynb_checkpoints/
+.python-version
+
+# ENVIRONMENT VARIABLES (CRITICAL)
+# Never push these to GitHub!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS related
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.ntvw/
+
+# Project specific
+backend/app.db
+backend/test.db
+backend/__pycache__/
+frontend/dist/
+frontend/node_modules/
