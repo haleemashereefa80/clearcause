@@ -3,7 +3,7 @@ import CampaignCard from '../components/CampaignCard';
 import { Search, Loader2 } from 'lucide-react';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000';
+import { API_BASE_URL } from '../api/config';
 
 const Campaigns = () => {
     const [campaigns, setCampaigns] = useState([]);

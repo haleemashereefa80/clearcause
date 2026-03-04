@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import CampaignCard from '../components/CampaignCard';
 
-const API_BASE_URL = 'http://localhost:8000';
+import { API_BASE_URL } from '../api/config';
 
 const Home = () => {
     const [featuredCampaigns, setFeaturedCampaigns] = useState([]);

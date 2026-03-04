@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Upload, IndianRupee, Landmark, ShieldCheck, Mail, Phone, Info, CheckCircle2, AlertCircle, Eye, EyeOff } from 'lucide-react';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000';
+import { API_BASE_URL } from '../api/config';
 
 const FundraiserRequest = () => {
     const [step, setStep] = useState(1);

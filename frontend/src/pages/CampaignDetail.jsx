@@ -4,7 +4,7 @@ import { ShieldCheck, Calendar, User, FileText, QrCode, Loader2 } from 'lucide-r
 import axios from 'axios';
 import DonationModal from '../components/DonationModal';
 
-const API_BASE_URL = 'http://localhost:8000';
+import { API_BASE_URL } from '../api/config';
 
 const CampaignDetail = () => {
     const { id } = useParams();

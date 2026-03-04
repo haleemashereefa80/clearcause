@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { LayoutDashboard, FileText, Users, DollarSign, Settings, LogOut, CheckCircle, XCircle, Info, ExternalLink } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { API_BASE_URL } from '../api/config';
 
 const AdminDashboard = () => {
     const navigate = useNavigate();
@@ -23,7 +24,7 @@ const AdminDashboard = () => {
     const [selectedFullRequest, setSelectedFullRequest] = useState(null);
     const [loadingDetails, setLoadingDetails] = useState(false);
 
-    const API_BASE_URL = 'http://localhost:8000';
+
 
     React.useEffect(() => {
         const fetchData = async () => {

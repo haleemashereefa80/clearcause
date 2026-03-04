@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { X, IndianRupee, QrCode, CreditCard, ShieldCheck, ChevronLeft, ChevronDown, Loader2 } from 'lucide-react';
 import axios from 'axios';
+import { API_BASE_URL, UPI_ID } from '../api/config';
 
-const API_BASE_URL = 'http://localhost:8000';
+
 
 const DonationModal = ({ isOpen, onClose, campaignId, campaignTitle, onSuccess }) => {
     const [step, setStep] = useState(1);
